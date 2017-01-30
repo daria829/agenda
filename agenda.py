@@ -20,14 +20,14 @@ def csv_get(file):
     db.Connect_Database("ajenda")
     
     #テーブルを作成
-    sql = "CREATE TABLE %s(" % file \
-          "JITITAI_MEI varchar(30)," \
-          "KAISAI_NEN int,"\
-          "KAISAI_TSUKI int,"\
-          "KAISAI_HI int,"\
-          "KAIGI_MEI varchar(90),"\
-          "GIAN_BANGOU int,"\
-          "GIDAI_MEI text,"\
+    sql = "CREATE TABLE %s(" % file + \
+          "JITITAI_MEI varchar(30)," + \
+          "KAISAI_NEN int," + \
+          "KAISAI_TSUKI int," + \
+          "KAISAI_HI int," + \
+          "KAIGI_MEI varchar(90)," + \
+          "GIAN_BANGOU int," + \
+          "GIDAI_MEI text," + \
           ");"
     db.ExeSQL(sql)
     i = 0
